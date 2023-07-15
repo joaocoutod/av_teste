@@ -22,6 +22,7 @@
     </div>
     @endif
 
+    @if(count($clientes) != 0)
     <table class="table">
         <thead class="table-light text-center">
           <tr>
@@ -142,17 +143,18 @@
             @endforeach
         </tbody>
     </table>
+    @endif
 
     <div class="p-5">
 
         <div class="text-center">
-            <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#insertcliente{{$cliente->id}}">
+            <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#insertcliente">
                 Inserir novo cliente
             </button>
         </div>
         
         <!-- MODAL INSERIR CLIENTE -->
-        <div class="modal fade" id="insertcliente{{$cliente->id}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade" id="insertcliente" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header border-0 text-muted">
@@ -163,7 +165,6 @@
 
                         <form method="POST" action="/cliente/INSERT2312312" class="pb-5">
                             @csrf
-                            <input type="hidden" name="id" value="{{$cliente->id}}">
                             
                             <div class="col-sm-12 mb-3">
                                 <label for="nome">Nome <span class="text-danger">*</span></label>
