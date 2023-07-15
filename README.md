@@ -56,19 +56,19 @@ Acesse o projeto
 
 
 ### Adicionar novo cliente
-<img width="100%" src="" alte="add">
+<img width="100%" src="public/imagens/inserir clientes.PNG" alte="add">
 
 <hr>
 
 ### Botão de ver menssagem
-<img width="100%" src="" alte="edit">
+<img width="100%" src="public/imagens/botao de ver menssagem.PNG" alte="edit">
 
 
 ### Botão de editar cliente
-<img width="100%" src="" alte="clinetes">
+<img width="100%" src="public/imagens/botao de editar cliente.PNG" alte="clinetes">
 
 <hr>
 
 ### Botão de excluir cliente
-<img width="100%" src="" alte="del">
+<img width="100%" src="public/imagens/botao de excluir clientes.PNG" alte="del">
 
