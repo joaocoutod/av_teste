@@ -45,6 +45,16 @@ Suba as migrates
 php artisan migrate
 ```
 
+(Opicional) adicione dados fakes
+```sh
+php artisan db:seed
+```
+
+Inicialize o serve
+```sh
+php artisan serve
+```
+
 Acesse o projeto
 [http://127.0.0.1:8000]
 
