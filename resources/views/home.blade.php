@@ -188,7 +188,7 @@
                                 </div>
                             </div>
 
-                            <button type="submit" class="btn btn-primary w-100">Alterar Mensagem</button>
+                            <button type="submit" class="btn btn-primary w-100">Adicionar novo cliente</button>
                         </form>
 
                     </div>
