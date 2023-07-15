@@ -17,25 +17,5 @@
 
     <!--bootstrap js-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.phone-mask').inputmask('99 99999 9999', {
-                oncomplete: function() {
-                    $(this).trigger('input'); // Dispara o evento 'input' quando a máscara é preenchida completamente
-                },
-                onincomplete: function() {
-                    $(this).trigger('input'); // Dispara o evento 'input' quando a máscara está incompleta
-                }
-            });
-
-            $('.phone-mask').on('input', function() {
-                // Remove todos os caracteres não numéricos do valor do campo
-                var cleanedValue = $(this).val().replace(/\D/g, '');
-                $(this).val(cleanedValue);
-            });
-        });
-    </script>
-
 </body>
 </html>
