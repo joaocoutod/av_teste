@@ -19,7 +19,7 @@ class ClientesFactory extends Factory
         return [
             'nome' => $this->faker->randomElement(['João Lucas', 'Lucas Couto', 'Ana Celina', 'Ana Clara', 'Ana Vitoria']),
             'email' => fake()->unique()->safeEmail(),
-            'telefone' => '92 99333 4344',
+            'telefone' => '92993334344',
             'mensagem' => $this->faker->randomElement([
                 'Lorem ipsum dolor sit amet, consectetur adipiscing.',
                 'enim ad minim veniam, quis nostrud exercitation ull.'
